@@ -223,6 +223,7 @@ class NowPlayingViewController: UIViewController, UICollectionViewDataSource, UI
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.searchBar.sizeToFit()
+        searchController.searchBar.barStyle = .blackTranslucent
         searchBarPlaceHolder.addSubview(searchController.searchBar)
         automaticallyAdjustsScrollViewInsets = false
         definesPresentationContext = true
